@@ -1,0 +1,117 @@
+/*
+* @Author: Marte
+* @Date:   2016-12-04 16:31:28
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-12-09 09:03:29
+*/
+html, body, div, p, ul, li, ol { margin: 0; padding: 0; }
+a { text-decoration: none; color: #000; }
+li { list-style: none; }
+html, body { font-size: 14px; }
+#all{
+    width:100%;
+    height:100%;
+    background:#F0F0F0;
+}
+/* 【1】顶部 */
+#top { width: 100%; height: 182px; min-width: 1000px; background: url(../img/hr_01.png); }
+.top-cen { width: 1000px; height: 100%; margin: auto; background: url(../img/top01.png) no-repeat; }
+.top-ul { margin-left: 49px; margin-top: 8px; }
+.top-ul li { float: left; margin-left: 45px; }
+.top-ul li a p { color: gray; text-transform: uppercase; font-size: .1em; text-align: right; }
+.top-ul li:hover a { color: red; }
+.top-ul li:hover a p { color: black; }
+
+/* 【2】banner */
+#banner { width: 100%; height: 525px; background: url(../img/banner.png) repeat-x; position: relative; min-width: 1000px; background-position: center; }
+#banner>a { display: block; width: 100%; height: 100%; }
+.banner-ul { width: 1000px; height: 34px;     /* background-color: yellow; */ position: absolute; bottom: 0; left: 50%; margin-left: -500px; }
+.banner-ul li { width: 195px; float: left; line-height: 34px; margin-left: 5px; background: black; color: #fff; padding-left: 20px; }
+.banner-ul li:hover { background: red; }
+#banner-left { width: 37px; height: 34px; background: url(../img/arr.png) no-repeat; margin-left: 0; }
+#banner-right { width: 37px; height: 34px; background: url(../img/arr.png) no-repeat; background-position: -57px 0; }
+#banner-left:hover { background-position: 0 -34px; }
+#banner-right:hover { background-position: -57px -34px; }
+
+/* 【3】微博QQ */
+#wei { width: 1000px;    /*  height: 611px; */ margin: auto;   /*  background:red; */ margin-top: 2px;    /* 当内容使用了浮动后要清楚浮动
+                高度让内容自行撑起 */ overflow: hidden; }
+    .wei-top1 { float: left; }
+    .wei-top2 { float: left; margin-left: 2px; }
+    .wei-top3 { background: url('../img/bg1-3_03.png') no-repeat; float: left; margin-left: 2px; position: relative; width: 184px; height: 98px; }
+    .top3-01 { background: url('../img/tb1_03.png') no-repeat; position: absolute; float: left; width: 40px; height: 40px; border-radius: 100%; margin-left: 26px; margin-top: 45px; transition: .5s; }
+    .top3-02 { background: url('../img/tb2_03.png') no-repeat; position: absolute; float: left; width: 40px; height: 40px; border-radius: 100%; margin-left: 68px; margin-top: 45px; transition: .5s; }
+    .top3-03 { background: url('../img/tb3_03.png')
+    no-repeat; position: absolute; float: left; width: 40px; height: 40px; border-radius: 100%; margin-left: 111px; margin-top: 45px; transition: .5s }
+    .top3-01:hover { transform: scale(1.3, 1.3); }
+    .top3-02:hover { transform: scale(1.3, 1.3); }
+    .top3-03:hover { transform: scale(1.3, 1.3); }
+    .center-top4 { float: left; margin-left: 3px; }
+
+    /* 【4】center */
+    #center { width: 1000px; height: 926px; background: #fff; margin: auto; overflow: hidden; margin-top: 10px; }
+    .center-left { width: 669px; height: 100%;      /* background:yellow; */ float: left; }
+    .center-left>p, .center-left>a, .center-left>span { float: left; }
+    .center-left>p { margin-top: 10px; margin-left: 15px; font-size: 16px; font-weight: bold; padding: left:1px; }
+    .center-left>a, .center-left>span { margin-top: 12px; font-size: 12px; color: #8E0505; }
+    .center-left>a:hover { color: red; }
+    .center-left>img { margin-left: 5px; margin-top: 10px; }
+    .left-red { width: 654px; height: 33px; background: red; margin-left: 15px; }
+    .left-red p { color: #fff; font-size: 15px; line-height: 33px; margin-left: 218px; }
+    .left-zi { width: 654px; height: 40px; /*        background:pink; */ margin-left: 15px; margin-top: 10px; }
+    .left-zi p { font-size: 13px; line-height: 20px; }
+    .left-photo { width: 654px; height: 411px; background: url('../img/show.png') no-repeat; margin-left: 15px; margin-top: 5px; transition: .5px; }
+    .meng { width: 654px; height: 0px; background: rgba(0, 0, 0, .5); overflow: hidden; transition: .5s; }
+    .meng>p { font-size: 25px; color: #fff; position: relative; left: 30px; font-family: 华康简魏碑; }
+    .left-photo:hover .meng { height: 411px; }
+    .left-bott { width: 654px; height: 300px;/*         background:green; */ margin-left: 15px; margin-top: 5px; }
+    .left-bott li { font-size: 14px; margin-top: 10px; }
+    .left-bott li a:hover { color: red;font-size:16px; }
+    .left-bott li a img{
+        transition:.5s;
+    }
+    .left-bott li a:hover img{
+        -webkit-transform: scale(1.5,1.5);
+           -moz-transform: scale(1.5,1.5);
+            -ms-transform: scale(1.5,1.5);
+             -o-transform: scale(1.5,1.5);
+                transform: scale(1.5,1.5);
+    }
+    .center-right { width: 330px; height: 918px;    /*  background: #e3e;  */ float: right; margin-top: 30px; }
+    .right-top { width: 291px; height: 33px; background: url('../img/right02.png') no-repeat; margin-left: 25px; margin-top: 10px; }
+    .right-top span { color: #fff; font-size: 20px; position: relative; top: 5px; left: 40px; }
+    .right-center { width: 100%; height: 400px;    /* background:red; */ }
+    .center-ul li { width: 122px; height: 95px; border: 1px solid gray; position: relative; left: 30px; top: -15px; float: left; margin-left: 10px; margin-top: 30px; }
+    .ph { width: 118px; height: 91px; position: absolute;/*     background:gray; */ background: url('../img/tu_07.png') no-repeat; top: 2px; left: 2px; }
+    .zi { width: 122px; height: 25px;/*     background: yellow; */ position: relative; top: 90px; }
+    .zi  p { position: relative; top: 10px; font-size: 13px; }
+    .center-ul li:hover p { color: red; }
+    .right-bottom { width: 100%; height: 215px;/*     background:#e3e; */ }
+    .bottom-top { width: 291px; height: 33px; background: url('../img/right02.png') no-repeat; margin-left: 25px; margin-top: 10px; }
+    .bottom-top span { color: #fff; font-size: 20px; position: relative; top: 5px; left: 40px; }
+    .bottom-ul div { width: 16px; height: 42px; background: url('../img/ss_03.png') no-repeat; float: left; margin-top: 8px; background-position: 0px -29px; }
+    .bottom-ul li { float: left; margin-left: 25px; margin-top: 2px; width: 291px; height: 28px; line-height: 28px; font-size: 13px; }
+    .bottom-ul a:hover li { background: #D50000; color: #fff; }
+    .bottom-ul a:hover li div { width: 16px; height: 16px; background: url('../img/ss_03.png') no-repeat; background-position: 0px 0px; }
+
+    /* bottom*/
+    #bottom { width: 100%; min-width: 1000px; overflow: hidden; background: red; margin-top: 10px; }
+    .bot-top { width: 100%; background: #2e2e2e; }
+    .bbt-01 { width: 1000px;    /* background:#2e2e2e; */ background: pink; margin: auto; overflow: hidden; position: relative; }
+    .bbt-01 img { float: left; }
+    .bbt-01-1 { float: left; width: 300px; height: 230px; background: url('../img/index_03.png') no-repeat; position: relative; }
+    .bbt-01-1-1 p, .bbt-01-1-1 span { color: #969696; font-size: 12px; }
+    .bbt-01-1-1 p { position: absolute; bottom: 80px; left: 126px; }
+    .bbt-01-1-1 span { position: absolute; bottom: 41px; left: 126px; }
+    .bbt-01-2 { position: absolute; float: left; width: 700px; margin-left: 300px; background: #2e2e2e; height: 230px; }
+    .bbt-01-2 div { float: left; width: 165px; height: 110px;    /* background: #e3e; */ margin-left: 10px; float: left; margin-top: 10px; }
+    .bbt-01-2 p { background: #000; width: 100%; height: 23px; color: white; line-height: 23px; font-size: 15px; }
+    .bbt-01-2 li { list-style-position: inside; list-style-type: disc; color: #969696; margin-top: 2px; font-size: 13px; }
+    .bbt-01-2 li:hover { background: #818181; }
+    .bbt-01-2 div:hover p { background: #676767; }
+    .bot-center { width: 100%; background: #1f1f1f; height: 180px; }
+    .bot-ph { width: 1200px; height: 180px; background: url('../img/btm-black_02.png') no-repeat; margin: auto; }
+    .bot-ph1 { position: relative; width: 100%px; height: 112px; background: #343434; background-repeat: repeat-x; bottom: 180px; }
+    .bot-ph2 { width: 100%; height: 112px; margin: auto;/*     bottom:180px; */ min-width: 1000px; position: relative; margin: auto; background: url('../img/gray.png') repeat-x; }
+    .bot-bottom { width: 100%; height: 110px; background: #000; }
+    .bot-bb { width: 1200px; height: 110px; margin: auto; background: url('../img/botm.png') no-repeat; }

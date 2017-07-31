@@ -1,0 +1,138 @@
+/*
+* @Author: Marte
+* @Date:   2016-12-04 16:31:28
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-12-09 09:03:08
+*/
+html, body, div, p, ul, li, ol { margin: 0; padding: 0; }
+a { text-decoration: none; color: #000; }
+li { list-style: none; }
+html, body { font-size: 14px; }
+#all{
+    width:100%;
+    height:100%;
+    background:#F0F0F0;
+}
+/* 【1】顶部 */
+#top { width: 100%; height: 182px; min-width: 1000px; background: url(../img/hr_01.png); }
+.top-cen { width: 1000px; height: 100%; margin: auto; background: url(../img/top01.png) no-repeat; }
+.top-ul { margin-left: 49px; margin-top: 8px; }
+.top-ul li { float: left; margin-left: 45px; }
+.top-ul li a p { color: gray; text-transform: uppercase; font-size: .1em; text-align: right; }
+.top-ul li:hover a { color: red; }
+.top-ul li:hover a p { color: black; }
+
+/* 【2】banner */
+#banner { width: 100%; height: 525px; background: url(../img/banner.png) repeat-x; position: relative; min-width: 1000px; background-position: center; }
+#banner>a { display: block; width: 100%; height: 100%; }
+.banner-ul { width: 1000px; height: 34px;     /* background-color: yellow; */ position: absolute; bottom: 0; left: 50%; margin-left: -500px; }
+.banner-ul li { width: 195px; float: left; line-height: 34px; margin-left: 5px; background: black; color: #fff; padding-left: 20px; }
+.banner-ul li:hover { background: red; }
+#banner-left { width: 37px; height: 34px; background: url(../img/arr.png) no-repeat; margin-left: 0; }
+#banner-right { width: 37px; height: 34px; background: url(../img/arr.png) no-repeat; background-position: -57px 0; }
+#banner-left:hover { background-position: 0 -34px; }
+#banner-right:hover { background-position: -57px -34px; }
+
+/* 【3】微博QQ */
+#wei { width: 1000px;    /*  height: 611px; */ margin: auto;   /*  background:red; */ margin-top: 2px;    /* 当内容使用了浮动后要清楚浮动
+                    高度让内容自行撑起 */ overflow: hidden; }
+    .wei-top1 { float: left; }
+    .wei-top2 { float: left; margin-left: 2px; }
+    .wei-top3 { background: url('../img/bg1-3_03.png') no-repeat; float: left; margin-left: 2px; position: relative; width: 184px; height: 98px; }
+    .top3-01 { background: url('../img/tb1_03.png') no-repeat; position: absolute; float: left; width: 40px; height: 40px; border-radius: 100%; margin-left: 26px; margin-top: 45px; transition: .5s; }
+    .top3-02 { background: url('../img/tb2_03.png') no-repeat; position: absolute; float: left; width: 40px; height: 40px; border-radius: 100%; margin-left: 68px; margin-top: 45px; transition: .5s; }
+    .top3-03 { background: url('../img/tb3_03.png')
+    no-repeat; position: absolute; float: left; width: 40px; height: 40px; border-radius: 100%; margin-left: 111px; margin-top: 45px; transition: .5s }
+    .top3-01:hover { transform: scale(1.3, 1.3); }
+    .top3-02:hover { transform: scale(1.3, 1.3); }
+    .top3-03:hover { transform: scale(1.3, 1.3); }
+    .center-top4 { float: left; margin-left: 3px; }
+
+    /* 【4】center */
+    #center { width: 1000px; height: 1222px; background: #fff; margin: auto; overflow: hidden; margin-top: 10px; }
+    .center-left { width: 300px; height: 1220px;  /*  background: blue; */float: left; margin-left: 15px; }
+    .center-left>p, .center-left>a, .center-left>span { float: left; }
+    .center-left>p { margin-top: 10px; font-size: 15px; font-weight: bold; padding: left:1px; }
+    .center-left>a, .center-left>span { margin-top: 12px; font-size: 12px; color: #8E0505; }
+    .center-left>a:hover { color: red; }
+    .center-left>img { margin-top: 10px; }
+    .ph01, .ph02 { width: 291px; height: 33px; background: #DCDCDC; margin-top: 8px; }
+    .ph01-1, .ph02-1 { width: 27px; height: 33px; background: url('../img/jiantou.png') no-repeat; }
+    .ph01>span, .ph02>span { color: #848484; font-size: 18px; font-weight: bold; position: relative; left: 40px; top: -25px; }
+    .ph01 ul { margin-left: 62px; }
+    .ph01 ul li { font-size: 18px; margin-top: 3px; }
+    .ph01 ul a:hover li { color: red; }
+    .ph01:hover, .ph02:hover { background: red; }
+    .ph01:hover span, .ph02:hover span { color: #fff; }
+    .ph02-z { margin-top: 200px; width: 291px; height: 160px;  /* background:blue; */  }
+    .ph03 { width: 291px; height: 370px;         /* background:green; */ margin-top: 20px; }
+    .ph03-photo { width: 100%; height: 77px;/*         background:pink; */ overflow: hidden; margin-top: 5px; }
+    .ph03-ph { width: 63px; height: 65px; float: left; background: url('../img/hot-news.png') no-repeat;
+    display:none; }
+    .ph03-ph p { font-size: 30px; line-height: 65px; margin-left: 15px; margin-top: -10px; font-weight: bold; color: #545454; }
+    .zi { width: 218px; height: 65px;    /* background:red; */ float: left; margin-left: 10px; }
+    .zi p { font-size: 13px; }
+    .zi span { position: relative; top: 7px; font-size: 10px; }
+    .xian2{
+        border-bottom: 1px dashed gray; margin-top: 50px;
+    }
+    .xian { border-bottom: 1px dashed gray; margin-top: 68px;}
+    .ph03-photo>a:hover .ph03-ph { background-position: 0px -67px;
+    display:block; }
+    .ph03-photo>a:hover .ph03-ph p { color: #fff; }
+    .ph03-photo>a:hover .zi { color: red; }
+    .ph03-photo>a:hover .xian2{
+        display:none;
+    }
+    .ph03-photo>a:hover .xian{
+        display:block;
+    }
+    .ph04 { width: 291px; height: 290px;        /*  background:pink; */margin-top: 28px; }
+    .ph04-zz { width: 291px; height: 218px;/*          background:#d3d; */ margin-top: 12px; }
+    .ph04-1 { width: 291px; height: 71px; margin-top: 2px;         /* background:green; */ }
+    .ph04-p { width: 151px; height: 71px; float: left; }
+    .ph04-p p { font-size: 13px; color: #7A7A7A; }
+    .ph04-1-div { float: left; width: 140px; height: 71px; background: url('../img/cen.png') no-repeat; background-position: 0px -71px; margin-left: 150px; margin-top: -71px; }
+    .ph04-1-div p { font-size: 14px; }
+    .ph04-1-div span { font-size: 27px; margin-left: 13px; position: relative; top: -4px; color: #7A7A7A; }
+    .ph04 a:hover .ph04-1-div { background-position: 0px 0px; color: #fff; }
+    .ph04 a:hover .ph04-1-div span { color: #fff; }
+    .ph04 a:hover .ph04-p p { color: red; }
+    .center-right { float: left; width: 685px; height: 1220px;/* background:pink;  */ }
+    .center-right>img { margin-top: 35px; margin-left: 23px; }
+    .center-rose { width: 685px; height: 1100px; background: #fff; }
+    .center-rose ul li { float: left; margin-left: 23px; margin-top: 20px; }
+    .rose-li { width: 319px; height: 345px;/*         background:#e3e; */ }
+    .rose-li div { width: 319px; height: 35px; background: #C8C8C8; margin-top: 45px; }
+    .rose-li div p { float: left; }
+    .rose-li-p1 { line-height: 35px; margin-left: 10px; font-size: 13px; }
+    .rose-li-p2 { margin-left: 161px; font-size: 30px; margin-top: -5px; }
+    .rose-li-p3 { font-size: 11px; margin-left: 164px; margin-top: -7px; }
+    .rose-li>p, .rose-li>span { float: left; margin-top: 5px; }
+    .rose-li>span { margin-left: 106px; }
+    .rose-li-p2, .rose-li-p3 { display: none; }
+    .center-rose ul a:hover div { background: yellow; color: red; }
+    .center-rose ul a:hover p, .center-rose ul a:hover span { color: red; }
+    .center-rose ul a:hover .rose-li-p2, .center-rose ul a:hover .rose-li-p3 { display: block; }
+
+    /* bottom*/
+    #bottom { width: 100%; min-width: 1000px; overflow: hidden; background: red; margin-top: 10px; }
+    .bot-top { width: 100%; background: #2e2e2e; }
+    .bbt-01 { width: 1000px;    /* background:#2e2e2e; */ background: pink; margin: auto; overflow: hidden; position: relative; }
+    .bbt-01 img { float: left; }
+    .bbt-01-1 { float: left; width: 300px; height: 230px; background: url('../img/index_03.png') no-repeat; position: relative; }
+    .bbt-01-1-1 p, .bbt-01-1-1 span { color: #969696; font-size: 12px; }
+    .bbt-01-1-1 p { position: absolute; bottom: 80px; left: 126px; }
+    .bbt-01-1-1 span { position: absolute; bottom: 41px; left: 126px; }
+    .bbt-01-2 { position: absolute; float: left; width: 700px; margin-left: 300px; background: #2e2e2e; height: 230px; }
+    .bbt-01-2 div { float: left; width: 165px; height: 110px;    /* background: #e3e; */ margin-left: 10px; float: left; margin-top: 10px; }
+    .bbt-01-2 p { background: #000; width: 100%; height: 23px; color: white; line-height: 23px; font-size: 15px; }
+    .bbt-01-2 li { list-style-position: inside; list-style-type: disc; color: #969696; margin-top: 2px; font-size: 13px; }
+    .bbt-01-2 li:hover { background: #818181; }
+    .bbt-01-2 div:hover p { background: #676767; }
+    .bot-center { width: 100%; background: #1f1f1f; height: 180px; }
+    .bot-ph { width: 1200px; height: 180px; background: url('../img/btm-black_02.png') no-repeat; margin: auto; }
+    .bot-ph1 { position: relative; width: 100%px; height: 112px; background: #343434; background-repeat: repeat-x; bottom: 180px; }
+    .bot-ph2 { width: 100%; height: 112px; margin: auto;/*     bottom:180px; */ min-width: 1000px; position: relative; margin: auto; background: url('../img/gray.png') repeat-x; }
+    .bot-bottom { width: 100%; height: 110px; background: #000; }
+    .bot-bb { width: 1200px; height: 110px; margin: auto; background: url('../img/botm.png') no-repeat; }
